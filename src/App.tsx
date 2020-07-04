@@ -12,7 +12,7 @@ const initialTodos: Array<Todo> = [
 ]
 
 const App: React.FC = () => {
-  const [todos, setTodos] = useState(initialTodos);
+  const [todos, setTodos] = useState<Array<Todo>>(initialTodos);
 
   const toggleTodo: ToggleTodo = selectedTodo => {
     const newTodos = todos.map(todo => {
